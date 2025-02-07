@@ -1,0 +1,32 @@
+services:
+  db:
+    build:
+      context: ./Database
+      dockerfile: Dockerfile  
+    container_name: mysql_dbd
+    restart: always    
+    ports:
+      - "3306:3306"
+
+  backend:
+    build:
+      context: ./user-management-api
+      dockerfile: Dockerfile
+    container_name: backend_app
+    restart: always
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: ./user-management-frontend
+      dockerfile: Dockerfile
+    container_name: frontend_app
+    restart: always
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+
+#todo desarrollar workspace para apiAuth
