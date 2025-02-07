@@ -63,7 +63,6 @@
 
 ## 🚀 Instalación y Ejecución con Docker Compose (Recomendado)
 
-Esta sección explica cómo instalar y ejecutar la aplicación completa utilizando **Docker Compose**. Este es el método recomendado, ya que simplifica la configuración y asegura un entorno consistente.
 
 ### Prerrequisitos
 
@@ -106,7 +105,7 @@ Esta sección explica cómo instalar y ejecutar la aplicación completa utilizan
     docker-compose down
     ```
 
-    Esto detendrá y eliminará los contenedores, la red y los volúmenes (si no son volúmenes externos).
+    Esto detendrá y eliminará los contenedores y la red.
     
 6.  **Detener los Contenedores y Eliminar Volumenes:**
 
@@ -114,4 +113,4 @@ Esta sección explica cómo instalar y ejecutar la aplicación completa utilizan
     docker-compose down -v
     ```
 
-    Esto detendrá y eliminará los contenedores, la red y los volúmenes, incluyendo la información de la base de datos.
+    Esto detendrá y eliminará los contenedores y la red, incluyendo la información de la base de datos.
