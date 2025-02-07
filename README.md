@@ -76,7 +76,7 @@ Esta sección explica cómo instalar y ejecutar la aplicación completa utilizan
 1.  **Clonar el Repositorio:**
 
     ```bash
-    git clone https://github.com/GersonAlonzo/user-management-module cd .\user-management-module\
+    git clone https://github.com/GersonAlonzo/user-management-module ; cd ./user-management-module
     ```
 
 2.  **Ejecutar con Docker Compose:**
