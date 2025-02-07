@@ -86,15 +86,21 @@ Esta sección explica cómo instalar y ejecutar la aplicación completa utilizan
     ```bash
     docker-compose up --build -d
     ```
+    2.1 Una vez instalado validar la conexion a la base de datos mediante un cliente: 
+    ![image](https://github.com/user-attachments/assets/42bf5deb-7b45-4f52-809a-e71325b78912)
+
+    2.2 Validar la estabilidad del proyecto en docker de almenos 2 minutos o mas
+    ![image](https://github.com/user-attachments/assets/432bf2ec-04c5-4e54-b2d8-10efd12e827b)
 
 
-3.  **Acceder a la Aplicación:**
+
+4.  **Acceder a la Aplicación:**
 
     *   **Frontend:** Abre tu navegador y ve a `http://localhost:5173` (o el puerto que hayas configurado).
     *   **Backend (Swagger UI):** Abre tu navegador y ve a `http://localhost:8080/swagger-ui.html`.
      *   **Backend (API):** `http://localhost:8080`
 
-4.  **Detener los Contenedores:**
+5.  **Detener los Contenedores:**
 
     ```bash
     docker-compose down
@@ -102,7 +108,7 @@ Esta sección explica cómo instalar y ejecutar la aplicación completa utilizan
 
     Esto detendrá y eliminará los contenedores, la red y los volúmenes (si no son volúmenes externos).
     
-5.  **Detener los Contenedores y Eliminar Volumenes:**
+6.  **Detener los Contenedores y Eliminar Volumenes:**
 
     ```bash
     docker-compose down -v
